@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "lt_011",
+  "description": "LT-011 | signup",
+  "version": "0.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://legacytouch.com/collections/pendants"],
+      "js": ["index.js"]
+    }
+  ]
+}
