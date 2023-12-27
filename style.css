@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 .new-element-container {
   position: relative;
   background-color: #a1c6ce;
@@ -9,25 +10,30 @@
   align-items: center;
   clip-path: polygon(0 34%, 100% 19%, 100% 100%, 0% 100%);
   background-color: #ffffff;
-  padding: 160px 40px 60px;
+  padding: 160px 40px 50px;
 }
 .new-element-img {
   position: absolute;
   right: 0px;
   top: 0px;
   z-index: 9;
+  max-width: 250px;
 }
 .second-div p {
-  font-family: "Libre Baskerville", sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: center;
   color: #003d68;
-  padding: 40px 0px 0px;
+  padding: 40px 0px 20px;
+  margin: 0;
 }
-.second-div input {
+.second-div p br {
+  display: none;
+}
+.second-div a {
   width: 100%;
   background-color: #003d68;
   font-family: "Roboto";
@@ -37,47 +43,83 @@
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
-  margin-top: 10px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
 }
-@media only screen and (max-width: 906px) {
-  .second-div p {
-    font-size: 27px;
-    padding: 20px 0px 0px;
-  }
-  .second-div {
-    padding: 160px 20px 40px;
-  }
+
+.second-div a:hover {
+  opacity: 0.85;
 }
-@media only screen and (max-width: 749px) {
-  .small--one-half:nth-child(3) {
-    width: 100%;
-  }
+
+@media (max-width: 1000px) {
   .second-div p {
-    font-size: 42px;
-    letter-spacing: 1px;
-    padding: 40px 0px 0px;
-  }
-  .second-div {
-    padding: 160px 40px 40px;
-  }
-}
-@media only screen and (max-width: 385px) {
-  .second-div p {
-    font-size: 32px;
-    letter-spacing: 0rem;
-  }
-  .second-div {
-    padding: 160px 20px 40px;
-  }
-}
-@media only screen and (max-width: 257px) {
-  .second-div p {
-    font-size: 23px;
-  }
-  .second-div input {
-    font-size: 13px;
+    font-size: 21px;
+    line-height: 27px;
   }
   .second-div {
     padding: 160px 10px 40px;
+  }
+  .new-element-img {
+    max-width: 215px;
+  }
+}
+@media (max-width: 749px) {
+  #Collection .grid.grid--uniform.grid--view-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #Collection .grid.grid--uniform.grid--view-items > div.grid__item {
+    order: 4;
+  }
+
+  #Collection
+    .grid.grid--uniform.grid--view-items
+    > div.grid__item:nth-child(1) {
+    order: 1;
+  }
+  #Collection
+    .grid.grid--uniform.grid--view-items
+    > div.grid__item:nth-child(2) {
+    order: 3;
+  }
+  #Collection
+    .grid.grid--uniform.grid--view-items
+    > div.grid__item:nth-child(3) {
+    order: 2;
+  }
+
+  #Collection
+    .grid.grid--uniform.grid--view-items
+    > div.grid__item.ca_lt_011_signup {
+    width: 100%;
+  }
+  .second-div p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .second-div p br {
+    display: block;
+  }
+  .second-div {
+    padding: 160px 20px 30px;
+  }
+  .new-element-img {
+    max-width: 230px;
+  }
+}
+@media (max-width: 400px) {
+  .second-div p {
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0rem;
+  }
+  .second-div {
+    padding: 143px 10px 40px;
+  }
+}
+@media (max-width: 335px) {
+  .second-div p {
+    font-size: 17px;
+    line-height: 22px;
   }
 }
